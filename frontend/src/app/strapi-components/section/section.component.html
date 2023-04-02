@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div
+    class="text"
+    [style]="imageOrientation === 'left' ? 'order: 1' : 'order: 0;'"
+  >
+    <div markdown ngPreserveWhitespaces>
+      {{ text }}
+    </div>
+  </div>
+  <div
+    class="image"
+    [style]="imageOrientation === 'left' ? 'order: 0' : 'order: 1;'"
+  >
+    <img [src]="'http://localhost:1337' + imageURL" />
+  </div>
+</div>

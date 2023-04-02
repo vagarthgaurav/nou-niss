@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    li {
+      font-size: 0.8rem;
+      font-family: poppins-semibold;
+      padding: 0 10px;
+    }
+
+    li:first-child {
+      padding: 0;
+    }
+  }
+
+  .links ul {
+    display: flex;
+  }
+  .socials ul {
+    display: flex;
+  }
+}

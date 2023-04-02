@@ -1,0 +1,11 @@
+<div class="page-wrapper">
+  <div class="page-components">
+    <div class="component" *ngFor="let component of pageComponents">
+      <app-section
+        [content]="
+          component['__component'] === 'page-blocks.section' ? component : ''
+        "
+      ></app-section>
+    </div>
+  </div>
+</div>
