@@ -2,10 +2,42 @@
   <div class="logo"><img src="./assets/logo.png" /></div>
 
   <nav>
-    <ul>
+    <ul class="menu" [class]="menuActive ? 'active' : ''">
       <li class="nav-link"><a routerLink="/">Home</a></li>
       <li class="nav-link"><a routerLink="/about">About</a></li>
       <li class="nav-link"><a routerLink="/contact">Contact</a></li>
+
+      <li class="socials">
+        <a routerLink="/"
+          ><fa-icon
+            *ngIf="menuActive"
+            [icon]="faInstagram"
+            class="menu-icon"
+          ></fa-icon
+        ></a>
+        <a routerLink="/"
+          ><fa-icon
+            *ngIf="menuActive"
+            [icon]="faFacebook"
+            class="menu-icon"
+          ></fa-icon
+        ></a>
+      </li>
+
+      <li class="toggle">
+        <a (click)="onToggle()" class="toggle">
+          <fa-icon
+            *ngIf="!menuActive"
+            [icon]="fa_bars"
+            class="menu-icon"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="menuActive"
+            [icon]="fa_close"
+            class="menu-icon"
+          ></fa-icon>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>

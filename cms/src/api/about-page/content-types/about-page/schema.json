@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "home_pages",
+  "collectionName": "about_pages",
   "info": {
-    "singularName": "home-page",
-    "pluralName": "home-pages",
-    "displayName": "Home Page",
-    "description": ""
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page"
   },
   "options": {
     "draftAndPublish": true
